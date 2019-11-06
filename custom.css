@@ -19,3 +19,12 @@
 #footer-country {
     color: #fff;
 }
+
+.header-social {
+    color: #fff;
+}
+
+.nav-social {
+    display:inline;
+    float: left;
+}
