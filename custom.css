@@ -26,5 +26,10 @@
 
 .nav-social {
     display:inline;
-    float: left;
+}
+
+#frontSliderText {
+    color: #151853;
+    font-size: 3.2rem !important;
+    font: bolder;
 }
