@@ -947,7 +947,11 @@
             var oTable = $('#example').DataTable({
                 "aaSorting": [
                     [1, 'asc']
-                ]
+                ],
+                "fnRowCallback": function(nRow, aData, iDisplayIndex) {
+                    $("td:first", nRow).html(iDisplayIndex + 1);
+                    return nRow;
+                },
             });
             // oTable.column(3)
             //     .data()
