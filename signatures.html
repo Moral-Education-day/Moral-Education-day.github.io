@@ -99,6 +99,7 @@
                                 <th>Name</th>
                                 <th>Core Stream</th>
                                 <th>University</th>
+                                <!-- <th>Country</th> -->
                             </tr>
                         </thead>
                         <tbody>
@@ -943,7 +944,14 @@
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#example').DataTable();
+            var oTable = $('#example').DataTable({
+                "aaSorting": [
+                    [1, 'asc']
+                ]
+            });
+            // oTable.column(3)
+            //     .data()
+            //     .sort();
         });
     </script>
 </body>
